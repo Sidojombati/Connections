@@ -19,12 +19,11 @@ button.word {
   border-radius: 0;          /* force square corners */
   -webkit-appearance: none;  /* remove iOS Safari default rounded style */
   appearance: none;          /* remove browser default styling */
-  border: 2px solid #333;    /* optional: define your own border */
   background-color: #fff;    /* consistent background */
   color: #000;               /* text color */
-  aspect-ratio: 1 / 1;       /* keeps buttons square (equal width & height) */
 }
 
 button.solved {
   font-weight: bold;
 }
+
