@@ -5,8 +5,8 @@ body {
 
 #grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr); /* always 4 columns */
+  gap: 10px;
   justify-content: center;
   margin-top: 20px;
   max-width: 100%;
@@ -16,12 +16,15 @@ button.word {
   padding: 20px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 0;          /* force square corners */
+  -webkit-appearance: none;  /* remove iOS Safari default rounded style */
+  appearance: none;          /* remove browser default styling */
+  border: 2px solid #333;    /* optional: define your own border */
+  background-color: #fff;    /* consistent background */
+  color: #000;               /* text color */
+  aspect-ratio: 1 / 1;       /* keeps buttons square (equal width & height) */
 }
 
 button.solved {
   font-weight: bold;
 }
-
-
-
-
