@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connections Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Connections Game</h1>
+
+  <!-- Wall selection -->
+  <div id="wallSelect">
+    <p>Select a wall:</p>
+    <button onclick="chooseWall('Wall1')">Wall 1</button>
+    <button onclick="chooseWall('Wall2')">Wall 2</button>
+    <button onclick="chooseWall('Wall3')">Wall 3</button>
+  </div>
+
+  <!-- Control buttons -->
+  <button id="startBtn" style="display:none;">Start Game</button>
+  <button id="resetBtn" style="display:none;">Reset Game</button>
+
+  <!-- Timer + grid -->
+  <div id="timer">Time: 0m 0s</div>
+  <div id="grid" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
