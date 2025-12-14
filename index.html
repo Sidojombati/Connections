@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<h1>New Years Quiz 2025!</h1>
-<h2>Test Test Test</h2>
 <html lang="en">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connections Game</title>
+  <title>New Years Quiz 2025!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Connections Game</h1>
+  <header>
+    <h1>New Years Quiz 2025!</h1>
+  </header>
 
   <!-- Wall selection -->
-  <div id="wallSelect">
+  <section id="wallSelect" class="panel">
     <p>Select a wall:</p>
-    <button onclick="chooseWall('Wall1')">Wall 1</button>
-    <button onclick="chooseWall('Wall2')">Wall 2</button>
-    <button onclick="chooseWall('Wall3')">Wall 3</button>
-  </div>
+    <div class="button-group">
+      <button onclick="chooseWall('Wall1')">Wall 1</button>
+      <button onclick="chooseWall('Wall2')">Wall 2</button>
+      <button onclick="chooseWall('Wall3')">Wall 3</button>
+    </div>
+  </section>
 
   <!-- Control buttons -->
-  <button id="startBtn" style="display:none;">Start Game</button>
-  <button id="resetBtn" style="display:none;">Reset Game</button>
+  <section class="controls">
+    <button id="startBtn" class="primary" style="display:none;">Start Game</button>
+    <button id="resetBtn" class="secondary" style="display:none;">Reset Game</button>
+  </section>
 
   <!-- Timer + grid -->
-  <div id="timer">Time: 0m 0s</div>
-  <div id="grid" style="display:none;"></div>
+  <section id="status">
+    <div id="timer">Time: 0m 0s</div>
+  </section>
+
+  <section id="grid" class="grid" style="display:none;">
+    <!-- Tiles will be injected here by script.js -->
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-

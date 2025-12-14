@@ -1,23 +1,83 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
   text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
-#grid {
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.panel {
+  margin: 20px 0;
+}
+
+.button-group button,
+.controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.button-group button:hover,
+.controls button:hover {
+  background-color: #ccc;
+}
+
+button.primary {
+  background-color: #4caf50;
+  color: white;
+}
+
+button.secondary {
+  background-color: #f44336;
+  color: white;
+}
+
+#timer {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 100px);
   grid-gap: 10px;
   justify-content: center;
   margin-top: 20px;
-  max-width: 100%;
 }
 
-button.word {
+.grid .tile {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
-button.solved {
-  font-weight: bold;
+.grid .tile:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
 }
+
+/* Category colors (like Connections pastel sets) */
+.category-yellow { background-color: #fff9c4; }
+.category-green { background-color: #c8e6c9; }
+.category-blue { background-color: #bbdefb; }
+.category-purple { background-color: #e1bee7; }

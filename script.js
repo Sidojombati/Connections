@@ -18,7 +18,7 @@ const walls = {
     Clothing: ["Shirt", "Pants", "Dress", "Hat"],
     Tech: ["Phone", "Laptop", "Tablet", "Camera"]
   }
-};
+}; 
 
 let categories;   // chosen wall
 let words = [];
