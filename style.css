@@ -71,3 +71,14 @@ button.secondary {
 .category-blue { background-color: #bbdefb; }
 .category-purple { background-color: #e1bee7; }
 
+/* Add responsive font size for mobile devices */
+@media (max-width: 600px) {
+  .grid {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .grid * {
+    font-size: 1.2rem; /* Ensure all child elements scale appropriately */
+  }
+}
+
