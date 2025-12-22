@@ -55,10 +55,11 @@ button.secondary {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(100px,1fr)); /* 4 columns, each 100px wide */
+  grid-template-columns: repeat(4, minmax(100px,10fr)); /* 4 columns, each 100px wide */
   grid-template-rows: 100px 100px 100px 100px; /* Each row 100px high */
   gap: 5px;
   justify-content: center;
+  margin: 20px 40px;
 }
 
 .grid > * {
