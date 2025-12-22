@@ -62,7 +62,7 @@ button.secondary {
 }
 
 .grid > * {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* Category colors (like Connections pastel sets) */
@@ -74,11 +74,11 @@ button.secondary {
 /* Add responsive font size for mobile devices */
 @media (max-width: 600px) {
   .grid {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
   }
 
   .grid * {
-    font-size: 1.2rem; /* Ensure all child elements scale appropriately */
+    font-size: 0.8rem; /* Ensure all child elements scale appropriately */
   }
 }
 
