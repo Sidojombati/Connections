@@ -9,7 +9,7 @@ body {
 
 header h1 {
   font-size: 2rem;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.2rem;
 }
 
 .subtitle {
@@ -59,26 +59,10 @@ button.secondary {
   grid-template-rows: 100px 100px 100px 100px; /* Each row 100px high */
   gap: 5px;
   justify-content: center;
-  margin-top: 20px;
 }
 
-.grid .tile {
-  background-color: #fff;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-size: 20rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  transition: transform 0.2s, background-color 0.2s;
-  justify-self: stretch;
-}
-
-.grid .tile:hover {
-  transform: scale(1.05);
-  background-color: #f0f0f0;
+.grid > * {
+  font-size: 1.5rem;
 }
 
 /* Category colors (like Connections pastel sets) */
