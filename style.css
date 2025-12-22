@@ -55,8 +55,9 @@ button.secondary {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, minmax(100px,1fr)); /* 4 columns, each 100px wide */
+  grid-template-rows: 100px 100px 100px 100px; /* Each row 100px high */
+  gap: 5px;
   justify-content: center;
   margin-top: 20px;
 }
@@ -65,10 +66,14 @@ button.secondary {
   background-color: #fff;
   border: 2px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
-  font-size: 1rem;
+  font-size: 20rem;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: transform 0.2s, background-color 0.2s;
+  justify-self: stretch;
 }
 
 .grid .tile:hover {
@@ -81,3 +86,4 @@ button.secondary {
 .category-green { background-color: #c8e6c9; }
 .category-blue { background-color: #bbdefb; }
 .category-purple { background-color: #e1bee7; }
+
