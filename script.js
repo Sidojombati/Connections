@@ -7,10 +7,10 @@ const walls = {
     Sports: ["Soccer", "Tennis", "Basketball", "Cricket"]
   },
   Wall2: {
-    Countries: ["France", "Spain", "Italy", "Germany"],
-    Drinks: ["Tea", "Coffee", "Juice", "Water"],
-    Instruments: ["Guitar", "Piano", "Drums", "Violin"],
-    Planets: ["Mars", "Venus", "Earth", "Jupiter"]
+    Follow_the_word_light: ["Year", "Bulb", "House", "Weight"],
+    Measurement_of_time: ["Day", "Month", "Hour", "Second"],
+    Types_of_plant: ["Aquatic", "Carnivorous", "Annuals", "Perenials"],
+    Synonyms_of_heavy: ["Load", "Burden", "Mass", "Cargo"]
   },
   Wall3: {
     Shapes: ["Circle", "Square", "Triangle", "Rectangle"],
@@ -96,7 +96,8 @@ function checkGroup() {
         }
       });
 
-      alert(`Correct! You found the group: ${cat}`);
+      // Replace underscores with spaces for display
+      alert(`Correct! You found the group: ${cat.replace(/_/g, ' ')}`);
       selected = [];
       rebuildGrid();
 
