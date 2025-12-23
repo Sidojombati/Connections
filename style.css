@@ -67,6 +67,7 @@ button.secondary {
   overflow-wrap: break-word; /* Break long words */
   text-overflow: ellipsis; /* Add ellipsis for overflowing text */
   white-space: normal; /* Allow text to wrap */
+  border-radius: 10px; /* Add rounded edges */
 }
 
 /* Category colors (like Connections pastel sets) */
@@ -74,3 +75,10 @@ button.secondary {
 .category-green { background-color: #c8e6c9; }
 .category-blue { background-color: #bbdefb; }
 .category-purple { background-color: #e1bee7; }
+
+/* Ensure text color is black on mobile devices */
+@media (max-width: 600px) {
+  .grid > * {
+    color: black; /* Set font color to black */
+  }
+}
