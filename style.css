@@ -125,9 +125,10 @@ button.secondary {
   font-weight: bold; /* Make text bold when selected */
 }
 
-/* Remove hover background color on mobile */
+/* Remove all hover color changes on mobile */
 @media (max-width: 600px) {
   .grid > *:hover {
-    background-color: unset; /* Remove hover effect */
+    background-color: unset; /* Remove background color change */
+    color: unset; /* Remove text color change */
   }
 }
