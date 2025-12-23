@@ -119,3 +119,8 @@ button.secondary {
     color: black !important; /* Force black text on mobile */
   }
 }
+
+/* Add bold text for selected boxes */
+.word.selected {
+  font-weight: bold; /* Make text bold when selected */
+}

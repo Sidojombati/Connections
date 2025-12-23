@@ -70,9 +70,11 @@ function onClick(btn, word) {
   if (solvedGroups.flat().includes(word)) return;
 
   if (selected.includes(word)) {
+    btn.classList.remove("selected"); // Remove bold text
     btn.style.backgroundColor = "";
     selected = selected.filter(w => w !== word);
   } else {
+    btn.classList.add("selected"); // Add bold text
     btn.style.backgroundColor = "lightgray";
     selected.push(word);
   }
