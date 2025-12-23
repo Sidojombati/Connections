@@ -124,3 +124,10 @@ button.secondary {
 .word.selected {
   font-weight: bold; /* Make text bold when selected */
 }
+
+/* Remove hover background color on mobile */
+@media (max-width: 600px) {
+  .grid > *:hover {
+    background-color: unset; /* Remove hover effect */
+  }
+}
