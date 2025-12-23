@@ -104,3 +104,10 @@ button.secondary {
     color: black; /* Ensure black text on mobile */
   }
 }
+
+/* Ensure text color for wall buttons is black on mobile */
+@media (max-width: 600px) {
+  .wall-button {
+    color: black !important; /* Force black text on mobile */
+  }
+}
