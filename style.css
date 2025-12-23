@@ -63,7 +63,10 @@ button.secondary {
 }
 
 .grid > * {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1rem); /* Dynamically adjust font size */
+  overflow-wrap: break-word; /* Break long words */
+  text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+  white-space: normal; /* Allow text to wrap */
 }
 
 /* Category colors (like Connections pastel sets) */
