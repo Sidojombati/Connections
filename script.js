@@ -7,10 +7,10 @@ const walls = {
     Sports: ["Soccer", "Tennis", "Basketball", "Cricket"]
   },
   Wall2: {
-    Follow_the_word_light: ["Year", "Bulb", "House", "Weight"],
-    Measurement_of_time: ["Day", "Month", "Hour", "Second"],
-    Types_of_plant: ["Aquatic", "Carnivorous", "Annuals", "Perenials"],
-    Synonyms_of_heavy: ["Load", "Burden", "Mass", "Cargo"]
+    Follow_The_Word_Light: ["Year", "Bulb", "House", "Weight"],
+    Time: ["Day", "Month", "Hour", "Second"],
+    Wee: ["Minute", "Little", "Dinky", "Slight"],
+    Playing_Cards: ["Ace", "Jack", "King", "Queen"]
   },
   Wall3: {
     Shapes: ["Circle", "Square", "Triangle", "Rectangle"],
