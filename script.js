@@ -82,7 +82,7 @@ function onClick(btn, word) {
   if (selected.length === 4) checkGroup();
 }
 
-// Check group
+// Reset bold text for incorrect selections
 function checkGroup() {
   for (let [cat, group] of Object.entries(categories)) {
     if (selected.every(w => group.includes(w))) {
@@ -120,6 +120,7 @@ function checkGroup() {
   [...grid.children].forEach(btn => {
     if (selected.includes(btn.textContent)) {
       btn.style.backgroundColor = "";
+      btn.classList.remove("selected"); // Remove bold text for incorrect selections
     }
   });
   selected = [];
