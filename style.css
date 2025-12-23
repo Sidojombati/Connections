@@ -26,7 +26,7 @@ header h1 {
   margin: 5px;
   padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
   background-color: #e0e0e0;
@@ -68,6 +68,17 @@ button.secondary {
   text-overflow: ellipsis; /* Add ellipsis for overflowing text */
   white-space: normal; /* Allow text to wrap */
   border-radius: 10px; /* Add rounded edges */
+  border: 0.5px solid; /* Set thinner border */
+}
+
+/* Change text color on hover */
+.grid > *:hover {
+  color: darkgray; /* Set font color to dark gray on hover */
+}
+
+/* Change background color on hover */
+.grid > *:hover {
+  background-color: lightgray; /* Set background color to light gray on hover */
 }
 
 /* Category colors (like Connections pastel sets) */
@@ -80,5 +91,16 @@ button.secondary {
 @media (max-width: 600px) {
   .grid > * {
     color: black; /* Set font color to black */
+  }
+}
+
+/* Ensure wall buttons have black text */
+.wall-button {
+  color: black; /* Set text color to black */
+}
+
+@media (max-width: 600px) {
+  .wall-button {
+    color: black; /* Ensure black text on mobile */
   }
 }
