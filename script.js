@@ -13,10 +13,10 @@ const walls = {
     Playing_Cards: ["Ace", "Jack", "King", "Queen"]
   },
   Wall3: {
-    Shapes: ["Circle", "Square", "Triangle", "Rectangle"],
-    Vehicles: ["Car", "Bike", "Train", "Plane"],
-    Clothing: ["Shirt", "Pants", "Dress", "Hat"],
-    Tech: ["Phone", "Laptop", "Tablet", "Camera"]
+    Silent_K: ["Knife", "Knight", "Knock", "Knob"],
+    JFK_Conspiracy: ["Knoll", "Umbrella", "CIA", "Black Dog"],
+    Clothing: ["Shirt", "Trousers", "Shorts", "Hat"],
+    Things_In_A_Kitchen: ["Mugs", "Pots", "Kettle", "Toaster"]
   }
 }; 
 
