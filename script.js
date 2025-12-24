@@ -1,10 +1,10 @@
 // Define multiple walls
 const walls = {
   Wall1: {
-    Fruits: ["Apple", "Banana", "Orange", "Grape"],
-    Colors: ["Red", "Blue", "Green", "Yellow"],
-    Animals: ["Dog", "Cat", "Horse", "Lion"],
-    Sports: ["Soccer", "Tennis", "Basketball", "Cricket"]
+    Before_The_Word_Box: ["Chatter", "Juke", "Shadow", "Soap"],
+    Washing_Machine_Cycles: ["Bulky", "Cotton", "Delicate", "Spin"],
+    Helpful_Deed: ["Favour", "Kindness", "Service", "Solid"],
+    Building_Materials: ["Brick", "Concrete", "Metal", "Stone"]
   },
   Wall2: {
     Follow_The_Word_Light: ["Year", "Bulb", "House", "Weight"],
@@ -14,7 +14,7 @@ const walls = {
   },
   Wall3: {
     Silent_K: ["Knife", "Knight", "Knock", "Knob"],
-    JFK_Conspiracy: ["Knoll", "Umbrella", "CIA", "Black Dog"],
+    JFK_Conspiracy: ["Knoll", "Umbrella", "Ruby", "Oswald"],
     Clothing: ["Shirt", "Trousers", "Shorts", "Hat"],
     Things_In_A_Kitchen: ["Mugs", "Pots", "Kettle", "Toaster"]
   }
